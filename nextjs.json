@@ -1,0 +1,33 @@
+{
+  "NextFunctionExportComponent": {
+    "prefix": "nxtfec",
+    "body": [
+      "export default function ${TM_DIRECTORY}() {",
+      "  return <div>${TM_DIRECTORY}</div>;",
+      "}"
+    ],
+    "description": "NextFunctionExportComponent"
+  },
+  "NextJsHeadComponent": {
+    "prefix": "nxthead",
+    "body": [
+      "import Head from 'next/head';",
+      "",
+      "export default function ${TM_FILENAME_BASE}() {",
+      "  return (",
+      "    <>",
+      "      <Head>",
+      "        <title>${1:Page Title}</title>",
+      "        <meta name='description' content='${2:Description}' />",
+      "        <link rel='icon' href='/favicon.ico' />",
+      "      </Head>",
+      "      <main>",
+      "        ${0}",
+      "      </main>",
+      "    </>",
+      "  );",
+      "}"
+    ],
+    "description": "Head component setup for SEO in Next.js."
+  }
+}
